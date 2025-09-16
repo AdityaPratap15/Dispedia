@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelfTreat - Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SelfTreat Admin</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Public Site</a>
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div id="loginSection" class="login-container">
+        <div class="login-card">
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="login-hint">Default credentials: admin / admin123</p>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="dashboardSection" class="dashboard-container" style="display: none;">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Disease & Treatment Management</h1>
+                <button id="addDiseaseBtn" class="btn btn-primary">Add New Disease</button>
+            </div>
+
+            <!-- Disease Form -->
+            <div id="diseaseForm" class="form-container" style="display: none;">
+                <div class="form-card">
+                    <h3 id="formTitle">Add New Disease</h3>
+                    <form id="diseaseFormElement">
+                        <input type="hidden" id="diseaseId">
+                        <div class="form-group">
+                            <label for="diseaseName">Disease Name:</label>
+                            <input type="text" id="diseaseName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="diseaseDescription">Description:</label>
+                            <textarea id="diseaseDescription" name="description" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="diseaseSymptoms">Symptoms:</label>
+                            <textarea id="diseaseSymptoms" name="symptoms" rows="4" placeholder="List the common symptoms..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="diseaseTreatment">Treatment:</label>
+                            <textarea id="diseaseTreatment" name="treatment" rows="5" required placeholder="Describe the treatment methods..."></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save Disease</button>
+                            <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Diseases List -->
+            <div id="diseasesList" class="diseases-container">
+                <h3>Manage Diseases</h3>
+                <div id="diseasesGrid" class="diseases-grid">
+                    <!-- Diseases will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

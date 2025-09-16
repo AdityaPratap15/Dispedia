@@ -1,0 +1,22 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "$2a$10$2P4OWS3VObS6ZRRG7uB/JOKON1Y2vokc2HZJRqRV4aTAt0ziDzjJu",
+      "created_at": "2025-09-13T10:08:03.712Z"
+    }
+  ],
+  "diseases": [
+    {
+      "id": 1,
+      "name": "Tuberculosis (TB)",
+      "description": "Tuberculosis is a bacterial infection caused by Mycobacterium tuberculosis. It primarily affects the lungs, but it can also spread to other parts of the body (like the brain, kidneys, or spine). TB spreads through airborne droplets when an infected person coughs, sneezes, or speaks.",
+      "symptoms": "Persistent cough (lasting more than 3 weeks)\n\nCoughing up blood or sputum\n\nChest pain\n\nUnexplained weight loss\n\nNight sweats\n\nFever and chills\n\nFatigue",
+      "treatment": "TB is treatable with a course of antibiotics. The most common treatment plan is called DOTS (Directly Observed Treatment, Short-course) which involves:\n\nFirst-line drugs:\n\nIsoniazid\n\nRifampicin\n\nEthambutol\n\nPyrazinamide",
+      "created_at": "2025-09-16T02:20:43.213Z",
+      "updated_at": "2025-09-16T02:20:43.213Z"
+    }
+  ],
+  "nextId": 2
+}
