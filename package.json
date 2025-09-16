@@ -1,7 +1,7 @@
 {
-  "name": "self-treat",
+  "name": "dispedia",
   "version": "1.0.0",
-  "description": "A website for managing diseases and treatments with admin and user interfaces",
+  "description": "Dispedia - A website for managing diseases and treatments with admin and user interfaces",
   "main": "backend/server.js",
   "engines": {
     "node": ">=14.0.0",

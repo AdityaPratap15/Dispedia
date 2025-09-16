@@ -53,16 +53,16 @@ class DatabaseManager {
 
     async createDefaultAdmin() {
         try {
-            const hashedPassword = bcrypt.hashSync('admin123', 10);
+            const hashedPassword = bcrypt.hashSync('medic@10', 10);
             const admin = {
                 id: 1,
-                username: 'admin',
+                username: 'ranigarima',
                 password: hashedPassword,
                 created_at: new Date().toISOString()
             };
             
             this.data.admins.push(admin);
-            console.log('Default admin user created (username: admin, password: admin123)');
+            console.log('Default admin user created (username: ranigarima, password: medic@10)');
             return Promise.resolve();
         } catch (error) {
             return Promise.reject(error);
